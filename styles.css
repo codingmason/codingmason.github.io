@@ -1,4 +1,45 @@
-body {
-	background-color: pink;
 
+
+body {
+	background-color: black;
+	
 }
+
+header {
+	background-image: url(https://upload.wikimedia.org/wikipedia/commons/1/10/Thetriumphofdeath.jpg);
+	height: 100vh;
+	-webkit-background-size: cover;
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 50px;
+}
+
+h1 {font-family: futura;
+	color: white;
+	margin-bottom: 0px;
+}
+
+h3 {font-family: futura;
+	font-style: italic;
+	font-weight: 100;
+	color:#ffd480;
+	}
+
+p {max-width: 600px;
+	background-color: white;
+	margin: 0px auto 20px;
+}
+
+#div-1 {background: rgba(0, 0, 0, 0.5);
+		padding:0px 20px; 
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;}
+
+
+
+
