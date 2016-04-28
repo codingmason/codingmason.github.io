@@ -12,6 +12,7 @@ a {
 	font-size: 2em;
 	font-weight: 800;
 	text-decoration: none;
+	box-shadow: inset 0px 0px 15px black;
 }
 a:hover {
     color: white;
@@ -21,7 +22,7 @@ aside {float: right;
     width: 250px;
     background: #ffd480;
     min-height: 100%;
-	margin-left: 40px;
+	margin: 10px 5%;
 	padding: 0px 10px;
 	border-radius:20px;
 }
@@ -68,9 +69,11 @@ button:hover {
 
 footer {
 
-	background: white;
-	padding-left: 10px;
-	border: solid 5px #cc8800;	
+	background-image: url(https://upload.wikimedia.org/wikipedia/commons/1/10/Thetriumphofdeath.jpg);
+	background-size: 100%;
+	background-position: 50% 10%;
+	padding: 5px 0px 5px 30px;
+	box-shadow: inset 0px 0px 15px black;
 }
 
 form {font-family: futura;
@@ -141,11 +144,12 @@ select {font-family: futura;
 
 .white-text {color: white;}
 
+.tan-text {color: #cc8800;}
 
-
-#aside-head {color: white;
+#aside-head  {color: white;
 			text-shadow: 2px 2px 5px black;
 			font-weight: bold}
+
 
 #div-1 {background: rgba(0, 0, 0, 0.5);
 		padding:0px 20px; 
@@ -154,10 +158,16 @@ select {font-family: futura;
 		align-items: center;
 		justify-content: center;}
 
+
+#footer-text {color: white;
+			text-shadow: 2px 2px 5px black;}
+
+
 #intro {
 		max-width: 900px;
 		background-color: white;
-		margin: 0px auto 20px;
+		border-radius: 20px;
+		margin: 0px auto 50px;
 		padding: 10px 20px}
 
 #tan-text {color: #cc8800;
