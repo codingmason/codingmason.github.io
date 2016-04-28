@@ -1,0 +1,220 @@
+a {
+
+	text-align: center;
+	width: 33%;
+	background: #cc8800;
+	border-radius: 10px;
+	margin: 0px 15px 50px 15px;
+	padding-top: 5px;
+	line-height: 50px;
+	color: black;
+	font-family: fantasy;
+	font-size: 2em;
+	font-weight: 800;
+	text-decoration: none;
+	box-shadow: inset 0px 0px 15px black;
+}
+a:hover {
+    color: white;
+}
+
+aside {float: right;
+    width: 250px;
+    background: #ffd480;
+    min-height: 100%;
+	margin: 10px 5%;
+	padding: 0px 10px;
+	border-radius:20px;
+}
+
+blockquote {
+	font-family: futura;
+	font-style: italic;
+	margin: 0px;
+	padding: 10px
+	font-weight:100;
+	margin-bottom: 10px;
+}
+
+body {
+	background-color: black;
+
+}
+
+button {
+	font-family: futura;
+	font-size: 1em;
+	background: #cc8800;
+	border: none;
+	border-radius: 15px;
+	padding: 10px;
+	margin-top: 40px;
+
+}
+
+button:hover {
+	background: url(https://upload.wikimedia.org/wikipedia/commons/2/2a/FIRE_01.JPG);
+	color: #ffd480;
+	text-shadow: 0px 0px 5px red;
+	box-shadow: 0px 0px 50px #cc8800;
+	background-position: 40% 45%;
+	background-size: 200%;
+	transform: scale(1.25, 1.25);
+	-webkit-transition: 1s ease-in-out;
+    -moz-transition: 1s ease-in-out;
+    -o-transition: 1s ease-in-out;
+    transition: 1s ease-in-out;
+
+}
+
+footer {
+
+	background-image: url(https://upload.wikimedia.org/wikipedia/commons/1/10/Thetriumphofdeath.jpg);
+	background-size: 100%;
+	background-position: 50% 10%;
+	padding: 5px 0px 5px 30px;
+	box-shadow: inset 0px 0px 15px black;
+}
+
+form {font-family: futura;
+	color: white;
+	font-size: 1.5em;
+	display: flex;
+  	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+h1 {font-family: futura;
+	color: white;
+	margin-bottom: 0px;
+	margin-top: 0px;
+}
+
+h2 {
+font-family: futura;
+	color:#cc8800;
+	font-size: 2em;
+	margin: 0px;
+	font-weight: bold;
+}
+
+h3 {font-family: futura;
+	font-style: italic;
+	font-weight: 100;
+	color:#ffd480;
+	}
+
+
+header {
+	background-image: url(https://upload.wikimedia.org/wikipedia/commons/1/10/Thetriumphofdeath.jpg);
+	height: 100vh;
+	-webkit-background-size: cover;
+	background-size: cover;
+	margin-bottom: 50px;
+
+}
+
+img {display: block;
+	margin: 0px auto}
+
+li 	{margin: 10px;
+	font-family: futura;
+}
+
+main {margin-bottom: 85px;
+
+}
+
+nav {display: flex;
+	}
+
+
+
+p {font-family: futura;
+	color: black;
+	font-size: 1.2em;
+}
+
+select {font-family: futura;
+	font-size: 1em;	
+}
+
+.flex-box {display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;}
+
+
+.white-text {color: white;}
+
+.tan-text {color: #cc8800;}
+
+#aside-head  {color: white;
+			text-shadow: 2px 2px 5px black;
+			font-weight: bold}
+
+
+#div-1 {background: rgba(0, 0, 0, 0.5);
+		padding:0px 20px; 
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;}
+
+#div-2 {} 
+
+#footer-text {color: white;
+			text-shadow: 2px 2px 5px black;}
+
+
+#intro {
+		max-width: 900px;
+		background-color: white;
+		border-radius: 20px;
+		margin: 0px auto 50px;
+		padding: 10px 20px}
+
+#tan-text {color: #cc8800;
+			font-weight: bold;}
+
+@media screen and (max-width: 700px) {
+  
+  aside {display: flex;
+  	flex-direction: column;
+	align-items: center;
+	min-width: 90%;
+	min-height: 100%;
+    background: #ffd480;
+	padding: 0px 10px;
+	border-radius:20px;
+	}
+	
+	a {
+	font-size: 1.25em;}
+	
+	button {
+	font-size: 0.9em;
+	display: flex;
+  	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin-top: 10px;}
+
+	button:hover {transform: scale(1, 2);
+					font-size: .8em}
+	
+	main {margin-bottom: 20px;}
+	
+	#div-2 {display: flex;
+  	flex-direction: column-reverse;
+	align-items: center;
+	justify-content: center;
+
+	}
+
+}
+
+
+
+}

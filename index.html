@@ -5,46 +5,56 @@
 	<meta charset="UTF-8">
 	<meta name="description" content="Barbarian Field Guide">
 	<meta name="author" content="Mason Brown">
+	<link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 
 <body>
-	<header>
+	<header class="flex-box">
+	<div id="div-1">
 		<h1>Barbarians, Vikings, and Raiders: A Field Guide</h1>
-			<h5>Your one-stop shop to identifying who is currently setting fire to your village</h5>
-		<hr>
-		<nav>
-			<a href="index.html">Home</a>
-			<a href="faq.html">FAQ</a>
-			<a href="resources.html">Resources</a>
-		</nav>
-		<hr>
+			<h3>Your one-stop shop to identifying who is currently setting fire to your village</h3>
+	</div>
 	</header>
+	<nav>
+			<a href="index.html">Home</a>
+			<a href="resources.html">Resources</a>
+			<a href="faq.html">FAQ</a>
+	</nav>
+	<section id="intro">
 		<h2>Introduction</h2>
-			<p>Hello Friends! You're probably here because, once again, your thatched roof is burning, your neighbors are screaming, the chastity of your livestock is being violated, and there's a very large and bearded gentleman knocking on your door. Ah, the sounds of springtime!</p>
-			<p>But what to do? How are you going grovel effectively and plead for your life without even knowing who's pillaging you? Well have no fear, because this field guide is here to help. Let's get down to business, shall we?</p>
-	<main>
+			<p>Hello Friends! You're probably here because, once again, your thatched roof is burning, your neighbors are screaming, the chastity of your livestock is being violated, and there's a very large and very bearded gentleman knocking on your front door. Ah, the sounds of springtime!</p>
+			<p>But what to do? How are you going grovel effectively and plead for your life without even knowing who it is that's marauding you this time? Well have no fear, because this field guide is here to help! Let's get down to business, shall we?</p>
+	</section>
+	<div id="div-2">
+	<aside>
+		<h3 id="aside-head">Words of Wisdom from Old Man Jenkins, Village Elder</h3>
+			<blockquote>They say it takes a whole village to raise a child. But it only takes one child to raze a village. Seriously, a baby could set fire to this place. What are our defenses? Mud? Sticks? Dysentery? It's no wonder we're getting sacked again! Gosh-darned good-fer-nothing whippersnappers! Why in my day, we had spine! We had gumption! We had &mdash; AGHHGH!!!! My femoral artery!!!! Goddamn arrows.... Aghghghhhhh! [UNINTELLIGIBLE]</blockquote>
+	</aside>
+	<main class="flex-box">
 		<h2>Identify Your Attackers in Three Easy Steps</h2>
 			<form name="identify" action="https://httpbin.org/post" method="post">
 				<ol>
 					<li>
-						The warriors pillaging me are singing:
+						The warriors pillaging my home are singing:
 					    <div>
 					      <select name="song">
+					      	<option disabled selected value></option>
 					        <option value="pirate">Chanteys</option>
 					        <option value="viking">Lusty battle hymns to their dark and bloody gods</option>
 					        <option value="raider">Unintelligible gibberish</option>
-					       	<option value="dude_bro">Late-period Billie Joel</option>
+					       	<option value="dude_bro">Late-period Billy Joel</option>
 					      </select>
 					    </div>
 					</li>
 					<li>
-						The warriors pillaging me are wearing:
+						They are wearing:
 					    <div>
 					      <select name="clothes">
+					      	<option disabled selected value></option>
 					        <option value="pirate">Peg legs and eyepatches</option>
 					        <option value="viking">Horned Helmets</option>
 					        <option value="raider">The skins of my loved ones</option>
-					       	<option value="dude_bro">Backwards baseball caps</option>
+					       	<option value="dude_bro">Backwards-facing baseball caps</option>
 					      </select>
 					    </div>
 					</li>
@@ -52,6 +62,7 @@
 						I'm being stabbed by:
 					    <div>
 					      <select name="weapon">
+					      	<option disabled selected value></option>
 					        <option value="pirate">Cutlasses and dirks</option>
 					        <option value="viking">A double-headed axe</option>
 					        <option value="raider">Bone fragments, teeth, and a live cat</option>
@@ -60,16 +71,12 @@
 					    </div>
 					</li>			
 				</ol>
-				  <button type="submit">Find out who is burning my hovel to the ground!</button>
+				  <button type="submit">Find out who's burning my hovel to the ground!</button>
 			</form>
 	</main>
-	<aside>
-		<h3>Words of Wisdom from Old Man Jenkins, the Village Elder</h3>
-			<blockquote>They say it takes a whole village to raise a child. But it only takes one child to raze a village. Seriously, a baby could set fire to this place. What are our defenses? Mud? Sticks? Dysentery? It's no wonder we're getting sacked again! Goddamn good-fer-nothing whippersnappers! Why in my day, we had spine! We had gumption! We had &mdash; AGHHGH!!!! My femoral artery!!!! Goddamn arrows.... Aghghghhhhh! [UNINTELLIGIBLE] </blockquote>
-	</aside>
-	<hr>
+	</div>
 	<footer>
-		<p>Brought to you by the Council of Peasant Pillager Relations &copy; 847 AD</p>
+		<p id="footer-text">Brought to you by the Council of Peasant Pillager Relations <span class="tan-text">&copy;</span> 847 AD</p>
 	</footer>
 </body>
 
