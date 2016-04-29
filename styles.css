@@ -17,6 +17,10 @@ a {
 a:hover {
     color: white;
 }
+a:visited {
+	background: #ffd480;
+}
+
 
 aside {float: right;
     width: 250px;
@@ -91,6 +95,7 @@ h1 {font-family: futura;
 	margin-bottom: 0px;
 	margin-top: 0px;
 	padding-bottom: 5px;
+	text-align: center;
 }
 
 h2 {
