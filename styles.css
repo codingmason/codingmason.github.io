@@ -32,7 +32,7 @@ blockquote {
 	font-family: futura;
 	font-style: italic;
 	margin: 0px;
-	padding: 10px
+	padding: 10px;
 	font-weight:100;
 	margin-bottom: 10px;
 }
@@ -90,6 +90,7 @@ h1 {font-family: futura;
 	color: white;
 	margin-bottom: 0px;
 	margin-top: 0px;
+	padding-bottom: 5px;
 }
 
 h2 {
@@ -149,10 +150,16 @@ select {font-family: futura;
 	align-items: center;
 	justify-content: center;}
 
+.idiom	{font-style: italic;}
+
+.tan-text {color: #cc8800;
+			font-weight: bold;}
 
 .white-text {color: white;}
 
-.tan-text {color: #cc8800;}
+
+
+
 
 #aside-head  {color: white;
 			text-shadow: 2px 2px 5px black;
@@ -180,13 +187,7 @@ select {font-family: futura;
 		margin: 0px auto 50px;
 		padding: 10px 20px}
 
-#idiom	{font-style: italic;
 
-
-}
-
-#tan-text {color: #cc8800;
-			font-weight: bold;}
 
 
 @media screen and (max-width: 1000px) {
@@ -231,4 +232,4 @@ select {font-family: futura;
 
 
 
-}
+
