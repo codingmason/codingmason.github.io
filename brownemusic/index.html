@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Herschel Lee Brown</title>
+  <link rel="stylesheet" type="text/css" href="jquery.fullPage.css" />
+  <link rel="stylesheet" type="text/css" href="browne-styles.css">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+  <script src="jquery.easings.min.js"></script>
+  <script type="text/javascript" src="jquery.fullPage.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+        $('#fullpage').fullpage({
+            sectionsColor: ['whitesmoke', '#7BAABE', 'whitesmoke', '#7BAABE', 'whitesmoke'],
+            continuousHorizontal: true,
+            anchors:['firstPage', 'secondPage', 'thirdPage', 'fourthPage'],
+            loopTop: true,
+            loopBottom: true,
+            fixedElements: '.fixed',
+
+        });
+
+    });
+</script>
+
+<style>
+    .section{
+        font-size: 6em;
+        text-align: center;
+    }
+</style>
+
+
+</head>
+<body>
+<!-- <div id="post-image"></div> -->
+<ul id="menu">
+    <li data-menuanchor="firstPage" class="board-blue"><a href="#firstPage">Home</a></li>
+    <li data-menuanchor="secondPage" class="board-red"><a href="#secondPage">Music</a></li>
+    <li data-menuanchor="thirdPage" class="board-blue"><a href="#thirdPage">Bio</a></li>
+    <li data-menuanchor="fourthPage" class="board-red"><a href="#fourthPage">Shows</a></li>
+    <li data-menuanchor="fifthPage" class="board-blue"><a href="#fifthPage">Contact</a></li>
+</ul>
+
+    <div id="fullpage">
+
+
+        <div class="section whitewash-background" data-anchor="firstPage">
+            <h1 id="browne-name">Herschel Lee Brown</h1>
+            <img id="browne-cutout" data-src="images/cutout.png">
+        </div>
+
+        <div class="section whitewash-background" data-anchor="secondPage">
+          <div class="slide">
+            <div class="youtube-embed">
+              <h2>Love Is Louder (2016)</h2>
+              <iframe src="https://www.youtube.com/embed/ndHGwuZP54k" frameborder="0" allowfullscreen></iframe>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="youtube-embed">
+              <h2>Roll Back The Stone (2009)</h2>
+              <iframe  src="https://www.youtube.com/embed/rqXtfCvBRbA" frameborder="0" allowfullscreen></iframe>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="youtube-embed">
+              <h2>Carolina You're Calling Me Home (2012)</h2>
+              <iframe scrolling="no" frameborder="no" src="https://www.reverbnation.com/widget_code/html_widget/artist_2510447?widget_id=55&pwc[song_ids]=21473195&context_type=song" frameborder="0" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+
+        <div class="section whitewash-background" data-anchor="thirdPage">
+          <div class="text-container">Browne's Story
+            <p>Herschel Lee Brown, known as Browne by his friends, is a Southern singer/songwriter who attributes his first musical influences to the soulful voices of relatives singing in his childhood church choir in Sharon, South Carolina, ten miles from where his family first settled on the Broad River in 1754. Browne's voice is his best instrument and has been described as "powerful yet soothing-edgy and soft-soaring and sweet."</p>
+            <p>The familiarity of his lyrics and powerful vocal style reflect Browne's authentically American musical influences, which include old Southern hymns, country and bluegrass of the late sixties and seventies including John Denver, John Prine, Bob Dylan, Dan Fogelberg, Joni Mitchell, Emmy Lou Harris and Crosby-Stills-Nash and Young.</p>
+            <p>Like many children of the sixties, Browne sang and played guitar in various bands throughout his late teens and early 20s but life happens, and he had to put down his guitar and pick up a hammer to support his family. Now that he has put his last child through college, he has picked up where he left off, creating his own unique blend of alternative country and Americana music. A finalist in the 2004 Flat Rock Music Festival Songwriting Contest, Browne can be heard at various venues in and around the Charlotte area, and sometimes in the Caribbean!</p>
+          </div>
+        </div>
+        <div class="section whitewash-background" data-anchor="fourthPage">
+        Upcoming Shows
+          <div class="showlist">
+
+            <div class="showItem">
+              <div class="showVenue">
+                <h3 class="title">Venue</h3>
+              </div>
+              <div class="showDate">
+                <h3 class="title">Date</h3>
+              </div>
+            </div>
+            <div class="showItem">
+              <div class="showVenue">
+                <h3>TBD</h3>
+              </div>
+              <div class="showDate">
+                <h3>TBD</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="section whitewash-background" data-anchor="fifthPage">
+          Contact
+            <p>Herschel Lee Brown</p>
+            <p>PO Box 36</p>
+            <p>Sharon, SC 29742</p>
+            <p><a href="mailto:brownemusic@msn.com" target="_top">brownemusic@msn.com</a></p>
+        </div>
+    </div>
+</body>
+</html>
