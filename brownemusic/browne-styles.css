@@ -38,7 +38,7 @@ li {
 
 p {
   font-size: 0.25em;
-  font-size: 2vw;
+  font-size: 1.75vw;
 }
 
 p a {
@@ -107,7 +107,7 @@ p a:hover {
 
 
 .showlist {
-  margin: 20px auto;
+  margin: 0 auto;
   padding: 5px;
   text-align: center;
   height:50%; 
@@ -123,31 +123,39 @@ p a:hover {
 }
 
 .showItem {
-  display: inline;
+  display: flex;
+  margin: 15px auto;
+}
 
+.showItem h3 {
+  color: #213d70;
+  margin: 3px auto;
+}
+
+.showItem p {
+  margin: 0;
 }
 
 .showDate {
-  float: left;
-  width: 40%;
+  width: 50%;
 }
 .showVenue {
-  float: right;
-  width: 40%
-}
+  width: 50%
 
+}
 
 
 .text-container {
   padding: 0 18%;
 }
 
-.title {
+.showItem .title {
   font-size: 2.5em;
   font-size: 3vw;
   text-decoration: underline;
   color: red;
   font-weight: normal;
+  margin-bottom: 15px;
 }
 
 .whitewash-background {
@@ -214,7 +222,6 @@ p a:hover {
   width: 100%;
   height: 50%;
   margin: auto;
-  position: absolute;
   opacity: 0;
   top: 0; left: 0; bottom: 0; right: 0;
   margin: auto;
