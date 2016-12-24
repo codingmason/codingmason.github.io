@@ -308,6 +308,7 @@ input[type='submit']:hover {
   }
 
   #title-text {
+    top: 40px;
     width: 640px;
   }
 
