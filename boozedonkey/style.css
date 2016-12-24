@@ -45,7 +45,7 @@ label {
   padding-right: 10px;
   padding-bottom: 10px;
   display: block;
-  font-size: 2.5vw;
+  font-size: 3.5vw;
   color: black;
 }
 
@@ -255,15 +255,15 @@ input[type='submit']:hover {
 
 #subtitle-text {
   position: absolute;
-  top: 13.5vw;
-  left: 28vw;
+  top: 14vw;
+  left: 20vw;
   display:table;
   vertical-align:middle;
   text-align:center;
   margin: 0 auto;
-  width: 44%;
+  width: 60%;
   font-family: 'helvetica';
-  font-size: 1.5vw;
+  font-size: 2vw;
   color: darkred;
   line-height: 200%;
 }
@@ -271,7 +271,7 @@ input[type='submit']:hover {
 #canvas {
   width: 100%;
   position: absolute;
-  top: 27vw;
+  top: 33vw;
   left: 1vw;
   z-index: 1;
   -webkit-tap-highlight-color: rgba(0,0,0,0);
@@ -282,7 +282,7 @@ input[type='submit']:hover {
 #burro-background {
   position: absolute;
   z-index: -1;
-  top: 23vw;
+  top: 28.5vw;
   left: 1vw;
   width: 96%;
   background-size: contain;
@@ -311,7 +311,7 @@ input[type='submit']:hover {
   }
 
   #subtitle-text {
-    top: 110px;
+    top: 115px;
     left: 0;
     right: 0;
     width: 400px;
@@ -320,7 +320,7 @@ input[type='submit']:hover {
   }
 
   #burro-background {
-    top: 190px;
+    top: 200px;
     left: -18px;
     right: 0;
     width: 744px;
@@ -328,16 +328,16 @@ input[type='submit']:hover {
   }
 
   #canvas {
-      top: 218px;
-      left: 0;
-      right: -30px;
-      width: 800px;
-      margin: 0 auto;
+    top: 228px;
+    left: 0;
+    right: -30px;
+    width: 800px;
+    margin: 0 auto;
   }
 
 
   #drinks {
-    top: 720px;
+    top: 690px;
     font-size: 15px;
   }
 
@@ -376,6 +376,7 @@ input[type='submit']:hover {
   label {
     font-size: 20px;
   }
+
 
   input[type='text'] {
    font-size: 20px;
