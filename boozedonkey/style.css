@@ -126,8 +126,8 @@ label {
 }
 
 .close-button:hover {
-    color:red;
-    background: pink;
+  color:red;
+  background: pink;
     
 }
 
@@ -144,14 +144,20 @@ ul.tab {
 
 /* Float the list items side by side */
 ul.tab li { 
-  width: 33vw
+  width: 33vw;
+  padding: 3vw 0;
+      -webkit-transform:scale(1,1.5); /* Safari and Chrome */
+    -moz-transform:scale(1,1.5); /* Firefox */
+    -ms-transform:scale(1,1.5); /* IE 9 */
+    -o-transform:scale(1,1.5); /* Opera */
+    transform:scale(1,1.5); /* W3C */
+
 }
 
 /* Style the links inside the list items */
 ul.tab li a {
   color: white;
   text-align: center;
-  padding: 2vw;
   text-decoration: none;
   transition: 0.3s;
   font-size: 4vw;
@@ -200,15 +206,14 @@ input[type='text'] {
 }
 
 input[type='submit'] {
-    background-color: red;
+    background: red;
     border: 0;
     color: white;
     padding: 5px 10px;
     margin-left: 10px;
-    cursor: pointer;
     font-size: 3vw;
     border-radius: 5px;
-    font-family: 'Papa'
+    font-family: 'Papa';
 }
 
 input[type='submit']:hover {
@@ -217,11 +222,12 @@ input[type='submit']:hover {
 
 #drinks {
   position: absolute;
-  top: 81vw;
+  top: 90vw;
   text-align: center;
   width: 100%;
   margin: 0 auto;
   font-size: 2vw;
+  
 }
 
 
@@ -328,7 +334,7 @@ input[type='submit']:hover {
 
 
   #drinks {
-    top: 650px;
+    top: 720px;
     font-size: 15px;
   }
 
