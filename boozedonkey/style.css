@@ -265,6 +265,8 @@ input[type='submit']:hover {
   top: 27vw;
   left: 1vw;
   z-index: 1;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-tap-highlight-color: transparent; 
 } 
 
 
@@ -279,6 +281,8 @@ input[type='submit']:hover {
   min-height: 100vw;
   background-image: url('background.png');
 }
+
+
 
 @media (min-device-width: 800px) and (min-width: 800px) {
 
