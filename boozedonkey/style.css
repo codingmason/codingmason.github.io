@@ -1,8 +1,8 @@
-
+* {  border: 1px solid blue;}
 html {
   min-width: 100%;
   width: 100%;
-  border: 1px solid blue;
+
   margin: 0px;
   padding: 0px;
   overflow-x: hidden;
@@ -14,7 +14,6 @@ body {
   color: white;
   font-family: helvetica;
   background: rgba(250,209,45,1);
-   border: 2px solid red;
   min-width: 100%;
   width: 100%;
   margin: 0px;
