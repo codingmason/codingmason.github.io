@@ -11,13 +11,7 @@ body {
   font-family: helvetica;
   margin: 0;
   background: rgba(250,209,45,1);
-  background: -moz-linear-gradient(left, rgba(250,209,45,1) 0%, rgba(255,190,0,1) 100%);
-  background: -webkit-gradient(left top, right top, color-stop(0%, rgba(250,209,45,1)), color-stop(100%, rgba(255,190,0,1)));
-  background: -webkit-linear-gradient(left, rgba(250,209,45,1) 0%, rgba(255,190,0,1) 100%);
-  background: -o-linear-gradient(left, rgba(250,209,45,1) 0%, rgba(255,190,0,1) 100%);
-  background: -ms-linear-gradient(left, rgba(250,209,45,1) 0%, rgba(255,190,0,1) 100%);
-  background: linear-gradient(to right, rgba(250,209,45,1) 0%, rgba(255,190,0,1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fad12d', endColorstr='#ffbe00', GradientType=1 );
+  
 }
 
 form {
@@ -227,7 +221,7 @@ input[type='submit']:hover {
   width: 100%;
   margin: 0 auto;
   font-size: 2vw;
-  
+
 }
 
 
