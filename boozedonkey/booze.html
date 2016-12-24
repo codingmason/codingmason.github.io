@@ -1,0 +1,158 @@
+<!DOCTYPE html><html><head><meta http-equiv=X-UA-Compatible content="IE=EmulateIE7"/>
+  <title>Booze Donkey</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href="favicon.ico" rel="icon" type="image/x-icon" />
+  <script type=text/javascript src="js/wheel.js"></script>
+  </head>
+
+  <body>
+
+    <div id="font-hack">nothing to see here, move along</div>
+    <div id="title-text"><h1>Booze Donkey!</h1></div>
+    <div id="subtitle-text"><h2>Click the wheel to find out what to drink. Booze Donkey won't lead you wrong!</h2></div>
+    <div id="burro-background"></div>
+
+    <div id=wheel>
+        <canvas id=canvas width=1270 height=600></canvas>
+    </div>
+        
+    <div id=drinks>
+
+      <ul class="tab">
+        <li><a href="javascript:void(0)" id="defaultOpen" class="tablinks" onclick="openList(event, 'booze-list')">Booze List</a></li>
+        <li><a href="javascript:void(0)" class="tablinks" onclick="openList(event, 'cocktail-list')">Cocktail List</a></li>
+        <li><a href="javascript:void(0)" class="tablinks" onclick="openList(event, 'smirnoff-list')">Smirnoff Roulette</a></li>
+      </ul>
+
+      <div id="booze-list" class="tabcontent">
+        <div class="drink">
+          <input class="drink-name" type="text" value="Gin"/>
+          <span class='close-button'>x</span>
+        </div>
+        <div class="drink">
+          <input class="drink-name" type="text" value="Scotch"/>
+          <span class='close-button'>x</span>
+        </div>
+        <div class="drink">
+          <input class="drink-name" type="text" value="Tequila"/>
+          <span class='close-button'>x</span>
+        </div>
+        <div class="drink">
+          <input class="drink-name" type="text" value="Champagne"/>
+          <span class='close-button'>x</span>
+        </div>
+        <div class="drink">
+          <input class="drink-name" type="text" value="Vodka"/>
+          <span class='close-button'>x</span>
+        </div>
+        <div class="drink">
+          <input class="drink-name" type="text" value="Rum"/>
+          <span class='close-button'>x</span>
+        </div>
+        <div class="drink">
+          <input class="drink-name" type="text" value="Wine"/>
+          <span class='close-button'>x</span>
+        </div>
+        <div class="drink">
+          <input class="drink-name" type="text" value="Beer"/>
+          <span class='close-button'>x</span>
+        </div>
+        <div class="drink">
+          <input class="drink-name" type="text" value="Bourbon"/>
+          <span class='close-button'>x</span>
+        </div>
+      </div>
+
+      <div id="cocktail-list" class="tabcontent">
+        <div class="drink">
+          <input class="drink-name" type="text" value="Vesper"/>
+          <span class='close-button'>x</span>
+        </div>
+        <div class="drink">
+          <input class="drink-name" type="text" value="Greyhound"/>
+          <span class='close-button'>x</span>
+        </div>
+        <div class="drink">
+          <input class="drink-name" type="text" value="Gin & Tonic"/>
+          <span class='close-button'>x</span>
+        </div>
+        <div class="drink">
+          <input class="drink-name" type="text" value="Corpse Reviver"/>
+          <span class='close-button'>x</span>
+        </div>
+        <div class="drink">
+          <input class="drink-name" type="text" value="Negroni"/>
+          <span class='close-button'>x</span>
+        </div>
+        <div class="drink">
+          <input class="drink-name" type="text" value="Dark & Stormy"/>
+          <span class='close-button'>x</span>
+        </div>
+        <div class="drink">
+          <input class="drink-name" type="text" value="Muzzle Flash"/>
+          <span class='close-button'>x</span>
+        </div>
+        <div class="drink">
+          <input class="drink-name" type="text" value="Mimosa"/>
+          <span class='close-button'>x</span>
+        </div>
+        <div class="drink">
+          <input class="drink-name" type="text" value="Martini"/>
+          <span class='close-button'>x</span>
+        </div>
+        <div class="drink">
+          <input class="drink-name" type="text" value="Bloody Mary"/>
+          <span class='close-button'>x</span>
+        </div>
+        <div class="drink">
+          <input class="drink-name" type="text" value="Southside Fizz"/>
+          <span class='close-button'>x</span>
+        </div>
+        <div class="drink">
+          <input class="drink-name" type="text" value="Manhattan"/>
+          <span class='close-button'>x</span>
+        </div>
+      </div>
+
+
+      <div id="smirnoff-list" class="tabcontent">
+        <div class="drink">
+          <input class="drink-name" type="text" value="Decent Drink"/>
+          <span class='close-button'>x</span>
+        </div>
+        <div class="drink">
+          <input class="drink-name" type="text" value="Smirnoff Ice"/>
+          <span class='close-button'>x</span>
+        </div>
+                <div class="drink">
+          <input class="drink-name" type="text" value="Decent Drink"/>
+          <span class='close-button'>x</span>
+        </div>
+        <div class="drink">
+          <input class="drink-name" type="text" value="Smirnoff Ice"/>
+          <span class='close-button'>x</span>
+        </div>
+                <div class="drink">
+          <input class="drink-name" type="text" value="Decent Drink"/>
+          <span class='close-button'>x</span>
+        </div>
+        <div class="drink">
+          <input class="drink-name" type="text" value="Smirnoff Ice"/>
+          <span class='close-button'>x</span>
+        </div>
+      </div>
+        <form>
+          <label>Or enter a new drink, Compadre!</label>
+          <input class="input" type="text" placeholder="Booze...">
+          <input type="submit" value="Add">
+        </form>
+    </div>
+  
+
+    <script type="text/javascript" src="js/wheel-ui.js"></script>
+  </body>
+ 
+  </html>
+
+
+

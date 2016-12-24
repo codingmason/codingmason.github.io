@@ -1,0 +1,413 @@
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+
+body {
+  text-align: center;
+  color: white;
+  font-family: helvetica;
+  margin: 0;
+  background: rgba(250,209,45,1);
+  background: -moz-linear-gradient(left, rgba(250,209,45,1) 0%, rgba(255,190,0,1) 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, rgba(250,209,45,1)), color-stop(100%, rgba(255,190,0,1)));
+  background: -webkit-linear-gradient(left, rgba(250,209,45,1) 0%, rgba(255,190,0,1) 100%);
+  background: -o-linear-gradient(left, rgba(250,209,45,1) 0%, rgba(255,190,0,1) 100%);
+  background: -ms-linear-gradient(left, rgba(250,209,45,1) 0%, rgba(255,190,0,1) 100%);
+  background: linear-gradient(to right, rgba(250,209,45,1) 0%, rgba(255,190,0,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fad12d', endColorstr='#ffbe00', GradientType=1 );
+}
+
+form {
+  margin: 10px auto;
+  font-size: 2vw;
+}
+
+
+h1 {
+  font-size: 10vw;
+  letter-spacing: 4px;
+  font-family: "Fort Death";
+  color: white;
+  font-weight: normal;
+  background: darkred;
+  border: 1vw black solid;
+  border-radius: 2vw;
+  text-shadow: 1vw 1vw 1vw black;
+  max-width: 80vw;
+}
+
+label {
+  padding-right: 10px;
+  padding-bottom: 10px;
+  display: block;
+  font-size: 2.5vw;
+  color: black;
+}
+
+
+
+
+.drink {
+  font-family: "Papa";
+  color: black;
+  margin: 1vw;
+  display: inline-block;
+  width: 30%;
+  height: 10vw;
+  line-height: 10vw;
+  text-align: center;
+  border-radius: 2vw;
+  box-shadow: 5px 5px 5px rgba(0,0,0,0.75);
+}
+
+.drink:nth-child(5n) {
+    background: #006432;
+}
+
+.drink:nth-child(5n+1) {
+    background: #f60000;
+}
+
+.drink:nth-child(5n+2) {
+    background: #fce300;
+}
+
+.drink:nth-child(5n+3) {
+    background: #5feedf;
+}
+
+.drink:nth-child(5n+4) {
+    background: #ff8100;
+}
+
+
+.drink:hover {
+  box-shadow: 5px 5px 25px rgba(0,0,0,0.75);
+}
+
+.drink:hover input {
+  color: white;
+  text-shadow: 0px 0px 2px black;
+}
+
+.drink input[type='text'] {
+ font-size: 3.25vw;
+ letter-spacing: 0.15vw;
+ font-family: 'Papa';
+ width: 28vw;
+ text-align: center;
+ background-color: transparent;
+ border: none;
+}
+
+
+.drink input[type='text']:focus {
+  text-shadow: none;
+  color: black;
+  border-radius: 0.5vw;
+  background-color: white;
+  outline: none;
+
+}
+
+
+.close-button {
+  font-size: 1.6vw;
+  position: relative;
+  top: -13vw;
+  right: -12.5vw;
+  padding: 0 0.5vw;
+  border-radius: 0.5vw;
+  background: rgba(255,255,255,0.75);
+  box-shadow: 0 0 3px black;
+}
+
+.close-button:hover {
+    color:red;
+    background: pink;
+    
+}
+
+
+ul.tab {
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+  width: 100%;
+  background: rgba(139, 0, 0, 0.3);
+}
+
+/* Float the list items side by side */
+ul.tab li { 
+  width: 33vw
+}
+
+/* Style the links inside the list items */
+ul.tab li a {
+  color: white;
+  text-align: center;
+  padding: 2vw;
+  text-decoration: none;
+  transition: 0.3s;
+  font-size: 4vw;
+  font-family: 'Fort Death';
+  text-shadow: 2px 2px 2px black;
+
+} 
+
+/* Change background color of links on hover */
+ul.tab li:hover {background-color: darkred;}
+
+/* Create an active/current tablink class */
+.clicked {background-color: darkred;}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border-top: none;
+  text-align: center;
+  width: 100%;
+  list-style: none;
+  margin: 2vw auto;
+
+}
+
+#cocktail-list .drink input[type='text'] {
+  font-size: 4vw;
+  font-family: "Fort Death"
+}
+
+
+
+.tabcontent.active {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 20px 0;
+  margin: 0 auto;
+  background: darkred;
+  border: none;
+}
+
+input[type='text'] {
+   font-size: 2.5vw;
+}
+
+input[type='submit'] {
+    background-color: red;
+    border: 0;
+    color: white;
+    padding: 5px 10px;
+    margin-left: 10px;
+    cursor: pointer;
+    font-size: 3vw;
+    border-radius: 5px;
+    font-family: 'Papa'
+}
+
+input[type='submit']:hover {
+    color: black;
+}
+
+#drinks {
+  position: absolute;
+  top: 81vw;
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+  font-size: 2vw;
+}
+
+
+#font-hack {
+ visibility: hidden;
+ font-family: "Papa";
+ position: static;
+
+}
+
+
+#title-text {
+  position: absolute;
+  top: -7vw;
+  left: 10vw;
+  display:table;
+  vertical-align:middle;
+  text-align:center;
+  margin: 0 auto;
+  width: 100%;
+}
+
+#subtitle-text {
+  position: absolute;
+  top: 13.5vw;
+  left: 28vw;
+  display:table;
+  vertical-align:middle;
+  text-align:center;
+  margin: 0 auto;
+  width: 44%;
+  font-family: 'helvetica';
+  font-size: 1.5vw;
+  color: darkred;
+  line-height: 200%;
+}
+
+#canvas {
+  width: 100%;
+  position: absolute;
+  top: 27vw;
+  left: 1vw;
+  z-index: 1;
+} 
+
+
+#burro-background {
+  position: absolute;
+  z-index: -1;
+  top: 23vw;
+  left: 1vw;
+  width: 96%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  min-height: 100vw;
+  background-image: url('background.png');
+}
+
+@media (min-width: 800px) {
+
+  h1 {
+    font-size: 5em;
+    border: 8px black solid;
+    border-radius:  20px;
+    text-shadow: 8px 8px 8px black;
+    max-width: 640px;
+  }
+
+  #title-text {
+    top: -55px;
+    left: 0;
+    right: 0;
+    width: 640px;
+  }
+
+  #subtitle-text {
+    top: 110px;
+    left: 0;
+    right: 0;
+    width: 400px;
+    font-size: 13px;
+    color: darkred;
+  }
+
+  #burro-background {
+    top: 190px;
+    left: -18px;
+    right: 0;
+    width: 744px;
+    margin: 0 auto;
+  }
+
+  #canvas {
+      top: 218px;
+      left: 0;
+      right: -30px;
+      width: 800px;
+      margin: 0 auto;
+  }
+
+
+  #drinks {
+    top: 650px;
+    font-size: 15px;
+  }
+
+  .tabcontent {
+    margin: 5px auto;
+    width: 800px;
+  }
+
+  .drink {
+    margin: 10px;
+    height: 80px;
+    line-height: 80px;
+    border-radius: 16px;
+  }
+
+
+
+  .drink input[type='text'] {
+   font-size: 28px;
+   letter-spacing: 2px;
+   width: 94%;
+  }
+
+  #cocktail-list .drink input[type='text'] {
+    font-size: 25px;
+  }
+
+  .close-button {
+    font-size: 13px;
+    top: -105px;
+    right: -100px;
+    padding: 0 5px;
+    border-radius: 0.5vw;
+  }
+
+  label {
+    font-size: 20px;
+  }
+
+  input[type='text'] {
+   font-size: 20px;
+  }
+
+
+  input[type='submit'] {
+    font-size: 25px;
+  }
+  
+  ul.tab {
+    width: 800px;
+  }
+
+  ul.tab li a {
+    padding: 20px;
+    font-size:33px;
+  }
+
+}
+
+
+
+
+
+
+
+@font-face {
+  font-family: 'Papa';
+  src: url('fonts/APapa.eot');
+  src: url('fonts/APapa.eot?#iefix') format('embedded-opentype'),
+    url('fonts/APapa.woff') format('woff'),
+    url('fonts/APapa.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Fort Death';
+  src: url('fonts/FortDeath.eot');
+  src: url('fonts/FortDeath.eot?#iefix') format('embedded-opentype'),
+    url('fonts/FortDeath.woff') format('woff'),
+    url('fonts/FortDeath.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
