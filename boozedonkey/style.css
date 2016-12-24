@@ -246,12 +246,11 @@ input[type='submit']:hover {
 #title-text {
   position: absolute;
   top: -7vw;
-  left: 10vw;
   display:table;
   vertical-align:middle;
   text-align:center;
   margin: 0 auto;
-  width: 100%;
+  width: 100vw;
 }
 
 #subtitle-text {
