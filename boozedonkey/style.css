@@ -280,7 +280,7 @@ input[type='submit']:hover {
   background-image: url('background.png');
 }
 
-@media (min-width: 800px) {
+@media (min-device-width: 800px) and (min-width: 800px) {
 
   h1 {
     font-size: 5em;
