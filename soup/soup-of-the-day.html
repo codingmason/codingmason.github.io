@@ -1,0 +1,337 @@
+<html>
+<head>
+  <title>Soup of the Day</title>
+
+
+    <style>
+
+    body, html {
+        background-color: black;
+        margin: 0;
+        padding: 0;
+
+    }
+
+    button {
+      position: relative;
+        padding-left: 0;
+        padding-right: 0;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top:0px;
+        display: block;
+        size: 2em;
+        padding: 10px;
+        background: white;
+        outline: none;
+        font-family: 'Special Elite';
+        top:-160px;
+        left: -50%;
+    }
+
+    canvas {
+        padding-left: 0;
+        padding-right: 0;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        filter: blur(1px);
+        position: relative;
+        border-radius: 4px;
+        left: 30%; 
+        top: 50px;
+        border: 1px solid black;
+        background: black;
+    } 
+    
+
+    p {
+        font-family: 'Special Elite';
+        text-align: center;
+        background: white;
+        margin: 20px auto;
+        padding: 8px 6px 4px 6px;
+        box-shadow: inset 2px 3px 4px rgba(0,0,0,0.5);
+        border-radius: 2px;
+        border: 2px solid black;
+        text-transform: lowercase;
+        display:inline-block; 
+    }
+
+  svg {
+        position: relative;
+        left: 400px;
+        top:450px;
+        overflow: visible ;
+  }
+
+    .lines {
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .parent-div {
+        position: absolute; 
+        left: 50%; 
+        top: -40px;
+
+    }
+
+    #poem {
+      position: relative;
+      left: 30%; 
+      top:-260px;
+      visibility: hidden;
+      z-index: 1;
+    }
+
+  #colorBars {
+    width: 100%;
+    height: 400px;
+    background: black;
+    position: relative;
+    z-index: 0;
+  }
+
+ #redBar {
+  height: 40%;
+
+  background-color: red;
+  background-image: url("img/concrete-wall.png")
+ }
+
+ #blueBar {
+  height: 30%;
+  background-color: blue;
+  background-image: url("img/concrete-wall.png")
+ 
+ }
+
+  #blackBar {
+  height: 20%;
+  background: black;
+ }
+
+  #yellowBar {
+  height: 12%;
+  background-color: yellow;
+  background-image: url("img/concrete-wall.png");
+  font-family: 'Special Elite';
+  font-size: 2em;
+  padding: 15px 0 0 10px;
+ }
+
+  #exquisiteCorpse {
+        position: relative;
+        width: 500px;
+        height: 350px;
+        right: 700px;
+        top:80px;
+        padding: 0;
+  }
+
+#top {
+  height: 105px;
+  background-image: url("img/top1.png");
+  background-repeat: no-repeat;
+  margin-bottom: -5px;
+}
+
+#middle {
+   height: 82px;
+    background-image: url("img/middle1.png");
+    background-repeat: no-repeat;
+
+}
+
+#bottom {
+  height: 159px;
+    background-image: url("img/bottom1.png");
+    background-repeat: no-repeat;
+}
+</style>
+
+<link href="https://fonts.googleapis.com/css?family=Special+Elite" rel="stylesheet">
+
+</head>
+<body>
+
+<div id="colorBars">
+  <div id="redBar"></div>
+  <div id="blueBar"></div>
+  <div id="blackBar"></div>
+  <div id="yellowBar">The Plaster Cramp</div>
+</div>
+
+  <div class="parent-div">
+
+  <canvas id="splatterCanvas" width="360px" height="360px">
+      <p class="canvas-no-support">Your Browser Does Not Support HTML5 canvas!</p>
+  </canvas>
+
+     
+      <div id="poem">
+        <div class="lines">
+            <p id="line1"></p>
+        </div>
+        <div class="lines">
+            <p id="line2"></p>
+        </div>
+          <div class="lines">
+            <p id="line3"></p>
+        </div>
+        <div class="lines">
+            <p id="line4"></p>
+        </div>
+      </div>
+  
+    <div>
+      
+
+<button onclick="makeSoup()">Make Soup!</button>
+  
+    <div class="parent-div">
+      <div id="exquisiteCorpse">
+        <div id="top"></div>
+        <div id="middle"></div>
+        <div id="bottom"></div>
+      </div>
+    </div>
+
+  <div class="parent-div">
+     <svg id="sigil" version="1.0" xmlns="http://www.w3.org/2000/svg"
+          width="30pt" height="30pt" viewBox="0 0 441.000000 472.000000"
+          preserveAspectRatio="xMidYMid meet" stroke="black" fill="red">
+        
+        <circle id="circle" cx="220" cy="240" r="300" stroke="none" stroke-width="20" fill="white" />
+        
+        <g transform="translate(0.000000,472.000000) scale(0.100000,-0.100000)">
+        <path stroke-width="100" d="M2070 3615 l0 -1095 -1035 0 -1035 0 0 -130 0 -130 963 -2 962 -3
+        -45 -50 c-25 -27 -68 -77 -95 -110 -28 -33 -185 -212 -350 -398 -165 -187
+        -333 -376 -372 -420 -40 -45 -73 -85 -73 -89 0 -3 265 -272 588 -598 l588
+        -591 79 3 80 3 3 1128 2 1127 1040 0 1040 0 0 130 0 130 -946 0 -945 0 23 33
+        c23 32 545 626 731 831 54 59 97 112 95 116 -2 4 -272 278 -600 609 l-597 601
+        -50 0 -51 0 0 -1095z m940 -126 c0 -6 -496 -571 -621 -708 l-59 -64 0 729 0
+        729 340 -340 c187 -187 340 -343 340 -346z m-940 -2251 l-1 -773 -359 365
+        c-197 201 -359 367 -359 370 -1 5 64 80 457 523 140 158 256 287 258 287 2 0
+        4 -348 4 -772z" />
+
+        </g>
+
+    </svg>
+  </div>
+
+</body>
+
+<script>
+
+ var cutUp = ["twilight of the dove", "the hebrews", "called the beginning", "of evening", "when the shadow", "does", "not", "mire", "the footsteps", "and the coming of night is recognized", "like", "awaited", "music", "not", "as", "a symbol of our", "essential", "insignificance", "that", "hour of fine", "sandy", "light", "my", "footsteps", "found", "a street", "i", "did", "not", "know", "opening", "as", "though", "onto", "a noble", "sweep of terrace", "disclosing", "on cornices", "and walls", "colors", "as", "soft", "as the sky", "itself", "that", "moved the background", "everything", "frank", "mediocrity", "of the plain", "houses", "playfulness of little", "columns", "and knockers", "perhaps", "a girl’s", "hope", "from the window", "railings", "entered", "my", "vain", "heart", "with the clarity of a tear", "that", "may", "have", "been the one", "hour", "ever", "enhance the street", "with", "a spell", "giving","privileges of tenderness", "makin", "like", "a legend", "or a verse", "what is certain is that", "i", "felt remotely", "near", "like", "a memory", "which", "arrives", "exhausted", "only", "because", "has", "come", "from the depths", "of the soul", "miracle", "of the glowing", "street", "intimate", "and deeply", "stirring", "and only", "afterward", "i", "realized", "that", "that", "place", "was", "strange", "that", "every", "house is a", "candelabra", "where the lives", "burn", "each", "its", "separate", "flame", "that", "each of our", "unthinking", "footsteps", "makes", "its", "way", "over the golgothas of others", "convinced of our", "mortality", "by", "so", "many", "confirmations of final", "dust", "we", "drop", "our", "voices", "our", "steps", "grow", "slow", "between the slow", "rows of family", "crypts", "whose", "rhetoric of shadow", "and stone", "promises", "or prefigures the coveted", "dignity of being", "dead", "there is beauty", "in the tombs the spare", "latin", "and link of fatal", "dates the conjunction of marble", "and flowers the broad", "intersections", "as", "cool", "as", "patios", "and all", "our", "yesterdays of a history", "now", "stilled", "and unique", "we", "mistake", "this", "peace", "for", "death", "believing", "we", "yearn", "for", "our", "end", "when", "we", "yearn", "for", "sleep", "and oblivion", "vibrant", "swords", "and in", "passion", "asleep", "ivy", "only", "life is real", "space", "and time", "are", "its", "shapes the mind’s", "magical", "modes", "and when", "life", "burns", "out", "space", "time", "and death", "go", "out", "with", "as", "when", "light", "fails the image", "in the mirror", "fails", "already", "grown", "dim", "in the dusk", "kindly", "shade", "of the trees", "breeze", "rich", "with", "birds", "rocking the branches", "my", "soul", "losing", "itself", "other", "souls", "only", "a wonder", "could", "undo", "their", "existence", "a wonder", "not", "be", "understood", "amid the brocade’s", "dimness the mahogany", "suite", "continues", "its", "everlasting", "conversation the daguerreotypes", "tell", "their", "lie", "a false", "nearness of old", "age", "cloistered", "a mirror", "and when", "we", "look", "hard", "they", "elude", "us", "like", "pointless", "dates of murky", "anniversaries", "with", "a blurred", "gesture", "their", "anxious", "almost-voice", "runs", "after", "our", "souls", "more", "than", "half", "a century", "late", "and there", "it’s", "scarcely", "reached the first", "mornings of our", "childhood", "actuality", "ceaseless", "ruddy", "and beyond", "doubt", "celebrates", "in the street’s", "traffic", "its", "unassailable", "abundance of present", "apotheosis", "while the light", "slices", "through the windowpanes", "and humbles the senile", "armchairs", "and comers", "and strangles the shriveled", "voice of these", "ancestors", "free of memory", "and hope", "unlimited", "abstract", "almost", "future the dead", "person is not", "a dead", "person", "it is death", "like the god", "of the mystics", "whom", "they", "insist", "has", "no", "attributes the dead", "person", "everywhere", "no", "one is nothing", "but the loss", "and absence", "of the world", "we", "rob", "it of everything", "we", "do", "not", "leave", "one", "color", "one", "syllable", "here is the", "yard", "which", "its", "eyes", "no", "longer", "take", "up", "there is the", "sidewalk", "where", "waylaid", "its", "hope", "even", "what", "we", "are", "thinking", "might", "be", "thinking", "too", "we", "have", "shared", "out", "like", "thieves the amazing", "treasure of nights", "and days", "sunset is always", "disturbing", "whether", "theatrical", "or muted", "but", "still", "more", "disturbing is that", "last", "desperate", "glow", "that", "turns the plain", "rust", "when", "on the horizon", "nothing is left", "of the pomp", "and clamor", "of the setting", "sun", "how", "hard", "holding", "on to", "that", "light", "so", "tautly", "drawn", "and different", "that", "hallucination", "which the human", "fear", "of the dark", "imposes", "on space", "and which", "ceases", "once the moment", "we", "realize", "its", "falsity the way", "a dream is broken the moment the sleeper", "knows", "he is dreaming", "in the deep", "universal", "night", "scarcely", "dispelled", "by the flickering", "gaslamps", "a gust of wind", "coming", "out of nowhere", "stirs the silent", "streets", "with", "a trembling", "presentiment", "of the hideous", "dawn", "that", "haunts", "like", "some", "he the tumbledown", "outskirts of cities", "all", "over the world", "under the spell", "of the refreshing", "darkness", "and intimidated", "by the threat of dawn", "i", "felt", "again", "that", "tremendous", "conjecture of schopenhauer", "and berkeley", "which", "declares the world", "activity", "of the mind", "a dream of souls", "without", "foundation", "or purpose", "or volume", "and since", "ideas", "are", "not", "like", "marble", "everlasting", "but", "ever-renewing", "like", "a forest", "or a river the previous", "speculation", "took", "another", "form", "in the dawn", "and the superstition", "of the hour", "when the light", "like", "a vine", "begins", "twining", "itself", "walls", "still", "shadow", "dominated", "my", "reason", "and projected the following", "whim", "if", "all", "things", "are", "devoid of matter", "and if", "this", "populous", "buenos", "aires", "comparable", "army", "complexity is no", "more", "than", "a dream", "arrived", "magic", "by", "souls", "working", "together", "there’s", "a moment", "a bullet", "has", "caught", "this", "soldier", "by the bank of some", "bright-running", "creek", "whose", "name", "he", "does", "not", "know", "he", "drops", "among the trees", "face", "down", "this", "story is true the man", "was", "many", "men the golden", "air", "displays the drooping", "needles", "of the ranks of forest", "pine", "a patient", "ant", "clumsily", "climbs the man’s", "unheeding", "face the sun", "gets", "high", "already", "many", "things", "have", "changed", "and more", "will", "change", "without", "end", "until", "a certain", "day", "when", "i", "will", "write of you", "who", "died", "unceremoniously", "falling", "war the way", "a dead", "man", "falls", "no", "marble", "marks the place", "or tells", "your", "name", "six", "feet of ground", "are", "now", "your", "shred of fame", "charles", "comes", "out", "among", "his", "people", "looks", "both", "left", "and right", "already", "he", "has", "waived the attendance of an", "escort", "liberated", "from", "need of lies", "he", "knows", "this", "very", "day", "he", "goes", "death", "but", "not", "oblivion", "that", "he is a", "king the execution", "waits the morning is both", "terrible", "and true", "there is no", "shiver", "his", "body", "he", "like", "a good", "gambler", "has", "always", "been", "aloof and he", "has", "drunk", "life", "to the lees", "now", "he", "moves", "singly", "armed", "mob the block", "does", "not", "dishonor", "him the judges", "are", "not the judge", "lightly", "he", "nods", "his", "head", "and smiles", "he", "has", "done", "now", "so", "many", "times the snowfalls of northumbria", "have", "known", "and have", "forgotten the imprint of your", "feet", "and numberless", "are the suns", "that", "now", "have", "set", "between", "your", "time", "and mine", "my", "ghostly", "kinsman", "slow", "in the growing", "shadows", "you", "would", "fashion", "metaphors of swords", "on the great", "seas", "and of the horror", "lurking", "in the pine", "trees", "and of the loneliness the days", "brought", "where", "can", "your", "features", "and your", "name", "be", "found", "these", "are", "things", "buried", "oblivion", "now", "i", "shall", "never", "know", "how", "must", "have", "been", "for", "you", "as", "a living", "man", "who", "walked", "his", "ground", "exiled", "you", "wandered", "through", "your", "lonely", "ways", "now", "you", "live", "only", "your", "iron", "lays", "zeus", "zeus", "himself", "could", "not", "undo", "these", "nets of stone", "encircling", "me", "my", "mind", "forgets the persons", "i", "have", "been", "along the way the hated", "way of monotonous", "walls", "which is my", "fate the galleries", "seem", "straight", "but", "curve", "furtively", "forming", "secret", "circles", "at the terminus of years", "and the parapets", "have", "been", "worn", "smooth", "by the passage of days", "here", "in the tepid", "alabaster", "dust", "are", "tracks", "that", "frighten", "me the hollow", "air of evening", "sometimes", "brings", "a bellowing", "or the echo", "desolate of bellowing", "i", "know", "that", "hidden", "in the shadows", "there", "lurks", "another", "whose", "task is to", "exhaust the loneliness", "that", "braids", "and weaves", "this", "hell", "crave", "my", "blood", "and to", "fatten", "on my", "death", "we", "seek", "each", "other", "oh", "if", "only", "this", "were the last", "day of our", "antithesis!", "let the guitar", "bring", "us", "tales of when the knives", "used", "flash", "tales of gambling", "and of dice", "horse", "races", "and hard", "drinking", "tales", "of the costa", "brava", "and of the old", "drovers’", "trail", "a story of yesterday of appeal", "all", "comers", "no", "deals", "can", "be", "made", "with", "fate", "so", "no", "one", "should", "reproach", "aware", "now", "that", "tonight", "memories", "come", "from the south", "gentlemen", "here’s the story", "of the iberra", "brothers", "men of loving", "and fighting the first", "rush", "danger", "flower of all", "knife", "fighters", "and now", "they’re", "six", "feet", "under", "things", "like", "pride", "and avarice", "always", "lead", "a man", "astray", "courage", "will", "also", "corrupt", "if", "pursued", "both", "night", "and day the younger", "of the two", "had", "more", "killings", "his", "credit", "someone", "had", "measured", "out", "his", "time", "someone", "marked", "his", "day", "someone", "whom", "no", "heed is paid", "either", "hurry", "or delay", "albornoz", "strolls", "lightly", "whistling", "entre", "ríos", "milonga", "under the brim of his", "cocky", "hat", "his", "eyes", "take", "in the morning the morning of this", "day", "far", "back", "eighteen", "ninety-one", "along the northern", "waterfront", "by", "now", "they’ve", "lost the sum", "of the loves", "he", "had", "and cardgames", "played", "around the clock", "or frays", "with", "knives", "battling", "neighbors", "or cops", "or men", "he", "didn’t", "know", "more", "than", "one", "tough", "more", "than", "one", "crook", "have", "had", "eye", "on him", "somewhere", "on a southside", "street", "a knife", "awaits the man", "not", "just", "a single", "knife", "but", "three", "before the day", "grows", "light", "they", "came", "him", "behind", "his", "back", "and he", "stood", "firm", "fight", "oundless", "battles of sunset", "beyond the ragged", "edges", "of the city the ancient", "recurring", "defeats of a war", "heaven", "ruinous", "white", "dawns", "that", "come", "for", "us", "out", "of the empty", "ends of space", "as", "from the ends of time", "black", "gardens of rain", "a sphinx", "a book", "i", "was", "always", "afraid", "reopen", "and whose", "image", "comes", "back", "dreams the corrupted", "matter the echo", "we", "shall", "be the moon", "on marble", "trees", "that", "grow", "up", "durable", "like", "untroubled", "gods the night", "shared the evening", "awaited", "walt", "whitman", "whose", "name is the", "universe", "a king’s", "sword", "useful", "battle", "lying", "at the soundless", "bed of a river the saxons the moors the goths", "who", "brought", "me", "forth", "unknowing", "am", "i", "these", "things", "and others", "or are", "they", "secret", "keys", "impossible", "algebras of what", "we", "shall", "never", "know", "turgid", "itch", "and the perfume of death", "on a whispering", "south", "wind", "a smell of abyss", "and of nothingness", "dark", "angel", "of the wanderers", "howls", "through the loft", "with", "sick", "smelling", "sleep", "morning", "dream of a lost", "monkey", "born", "and muffled", "under", "old", "whimsies", "with", "rose", "leaves", "closed", "jars", "fear", "and the monkey", "sour", "taste of green", "fruit", "in the dawn the air", "milky", "and spiced", "with the trade", "winds", "white", "flesh", "was", "showing", "his", "jeans", "were", "so", "old", "leg", "shadows", "by the sea", "morning", "light", "on the sky", "light of a little", "shop", "on the odor of cheap", "wine", "in the sailors", "quarter", "on the fountain", "sobbing", "in the police", "courtyards", "on the statue of moldy", "stone", "on the little", "boy", "whistling", "stray", "dogs", "wanderers", "cling", "their", "fading", "home", "a lost", "train", "whistle", "wan", "and muffled", "in the loft", "night", "taste of water", "morning", "light", "on milky", "flesh", "turgid", "itch", "ghost", "hand", "sad", "as the death of monkeys", "thy", "father", "a falling", "star", "crystal", "bone", "into", "thin", "air", "night", "sky", "dispersal", "and emptiness", "its", "so", "hard", "remember", "in the world", "werent", "you there", "dead", "so", "you", "think of ports", "couldn't", "reach", "flesh", "might", "have", "reach", "flesh", "from", "anybody", "and i", "will", "depart", "under the red", "masters", "for", "strange", "dawn", "words of color", "exalting", "their", "falling", "on my", "face", "impending", "attack", "satellite", "a gold", "and perfumes of light", "city", "red", "stone", "shadows", "brick", "terminal", "time", "wet", "dream", "flesh", "creakily the last", "feeble", "faces", "fountains", "play", "stale", "spit", "from", "crumpled", "cloth", "weimar", "youths", "on my", "face", "bodies", "where", "flesh", "circulates", "masters of color", "exalting", "their", "dogs", "impending", "attack of light", "unaware of the vagrant", "shadows", "on the glass", "and metal", "streets", "silver", "flying", "scanning", "patterns", "electric", "dogs", "dark", "street", "life", "here", "he is now", "staring", "out", "from", "the dawn", "he", "strode", "toward", "the flesh", "jissom", "webs", "drifting", "where", "identity", "scarred", "metal", "faces", "masturbating", "who", "him", "spitting", "blood", "laugh", "on the iron", "afternoons", "ejaculates", "wet", "dream", "flesh", "red", "brick", "terminal", "time", "red", "nitrous", "fumes", "under", "the orange", "gas", "flares", "grey", "metal", "fall", "out", "on terminal", "cities", "the shrinking", "sky", "fading", "color", "sewage", "delta", "caught", "this", "dead", "whistle", "stop", "post", "card", "sky", "dead", "rainbow", "flesh", "and copper", "pagodas", "flickered", "on the in", "a city of red", "stone", "black", "skin", "work", "fish"] 
+
+    // Define Poem Lines
+    var poem  = document.getElementById("poem");
+    var line1 = document.getElementById("line1");
+    var line2 = document.getElementById("line2");
+    var line3 = document.getElementById("line3");
+    var line4 = document.getElementById("line4");
+    var sigil = document.getElementById("sigil");
+    var circle = document.getElementById("circle");
+
+    var topImage = document.getElementById("top");
+    var middleImage = document.getElementById("middle");
+    var bottomImage = document.getElementById("bottom");
+    // Define canvas
+    var c = document.getElementById("splatterCanvas");
+    var ctx = c.getContext("2d");
+    
+    // Set colors
+    var colors =["rgb(0,0,255)", "rgb(255,0,0)","rgb(255,255,0)", "rgb(0,0,0)", "rgb(255,255,255)"]
+
+    function getColor() {
+      return colors[ Math.floor(Math.random() * colors.length) ]
+    }
+
+    function drawShapes(l,w,x,y,colourOfRect){
+        ctx.beginPath();
+        ctx.rect(x,y,l,w);
+        ctx.fillStyle=colourOfRect;
+        ctx.fill();
+
+        ctx.closePath();
+    }
+
+  function getCutUpIndex() {
+    return Math.floor(Math.random() * cutUp.length)
+  }
+
+  function getCutUpLine() {
+    return cutUp[getCutUpIndex()].concat(" ", cutUp[getCutUpIndex()], " ", cutUp[getCutUpIndex()]) 
+  }
+
+
+  function rotateText() {
+    var plusOrMinus = Math.random() < 0.5 ? -1 : 1;
+    var randomAngle = Math.floor(Math.random() * 7  * plusOrMinus).toString()
+    return "rotate(".concat(randomAngle,"deg) translateX(", randomAngle, "px) translateY(", randomAngle, "px)")
+
+  }
+
+
+function randomRange(n) {
+  return Math.floor(Math.random() * n) +1
+}
+
+function exquisiteCorpse() {
+  topImage.style.backgroundImage = "url('img/top".concat(randomRange(4).toString() ,".png')")
+  middleImage.style.backgroundImage = "url('img/middle".concat(randomRange(4).toString() ,".png')")
+  bottomImage.style.backgroundImage = "url('img/bottom".concat(randomRange(4).toString() ,".png')")
+}
+
+
+
+function shuffle(a) {
+    var j, x, i;
+    for (i = a.length; i; i--) {
+        j = Math.floor(Math.random() * i);
+        x = a[i - 1];
+        a[i - 1] = a[j];
+        a[j] = x;
+    }
+}
+
+  function makeSoup() {
+
+      poem.style.visibility = "visible";
+      exquisiteCorpse();
+
+    for (i=0;i<=80;i++){
+        l=Math.floor((Math.random()*100)+1);
+        w=Math.floor((Math.random()*100)+1);
+        x=Math.floor((Math.random()*400)+1);
+        y=Math.floor((Math.random()*400)+1);
+        x1=Math.floor((Math.random()*555)+1);
+        c2=Math.floor((Math.random()*555)+1);
+        c3=Math.floor((Math.random()*555)+1);
+        c4=Math.floor((Math.random()*555)+1);
+        c5=Math.floor((Math.random()*255)+1);
+        c6=Math.floor((Math.random()*223)+1);
+        drawShapes(l,w,x,y, getColor())
+    }
+
+  line1.innerHTML = getCutUpLine();
+  line2.innerHTML = getCutUpLine();
+  line3.innerHTML = getCutUpLine();
+  line4.innerHTML = getCutUpLine();
+
+  line1.style.transform = rotateText()
+  line2.style.transform = rotateText()
+  line3.style.transform = rotateText()
+  line4.style.transform = rotateText()
+  shuffle(colors)
+  circle.style.fill = colors[0];
+  sigil.style.fill = colors[1];
+  sigil.style.stroke = colors[2];
+}
+
+window.onload = makeSoup()
+</script>
+</html>
